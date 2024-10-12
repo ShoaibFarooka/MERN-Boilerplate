@@ -1,0 +1,4 @@
+.home .title {
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-heading);
+}

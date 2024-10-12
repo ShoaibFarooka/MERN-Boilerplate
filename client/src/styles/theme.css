@@ -1,0 +1,21 @@
+:root {
+    --primary-color-1: #F7F7F8;
+    --primary-color-2: #FFFFFF;
+    --secondary-color-1: #121212;
+    --secondary-color-2: #1F1F1F;
+    --secondary-color-3: #606060;
+    --accent-color-1: #53FDCA;
+    --accent-color-2: #605BFF;
+    --bg-color: #FAFAFA;
+    --font-weight-heading: 700;
+    --font-weight-sub-heading: 600;
+    --font-weight-base: 400;
+    --font-size-heading: 2.18rem;
+    --font-size-sub-heading: 1.56rem;
+    --font-size-base: 1rem;
+}
+
+body {
+    color: var(--primary-color);
+    font-size: var(--font-size-base);
+}
