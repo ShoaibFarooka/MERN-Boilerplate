@@ -25,14 +25,10 @@ services:
 
   mongodb:
     image: mongo:5.0
-    container_name: local-mongo
-    ports:
-      - "27017:27017"  # Expose MongoDB's default port for external access if needed
-    volumes:
-      - mongo-data:/data/db  # Persist MongoDB data in a Docker volume
+    container_name: mongodb
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root  # Optional: MongoDB username
-      MONGO_INITDB_ROOT_PASSWORD: example  # Optional: MongoDB password
-
-volumes:
-  mongo-data:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: mydatabase
+    ports:
+      - "27017:27017"
